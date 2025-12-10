@@ -39,8 +39,12 @@ function Farming() {
               </video>
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{t('farming.card_titles.traditional_farming')}</h5>
-                <p className="card-text">{t('farming.card_descriptions.traditional_farming_desc')}</p>
-                <a href="#!" className="btn btn-primary mt-auto">{t('farming.go_somewhere')}</a>
+                <p className="card-text">
+                  {t('farming.card_descriptions.traditional_farming_desc')}
+                </p>
+                <a href="#!" className="btn btn-primary mt-auto">
+                  {t('farming.go_somewhere')}
+                </a>
               </div>
             </div>
           </div>
@@ -49,15 +53,21 @@ function Farming() {
           {[images.img1, images.img2, images.img3, images.img4, images.img5].map((img, index) => (
             <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
               <div className="card">
-                <img src={img} className="card-img-top" alt={`Farming Image ${index + 1}`} />
+                {/* FIX: Removed redundant words (image/photo/picture) */}
+                <img src={img} className="card-img-top" alt={`Farming ${index + 1}`} />
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{t(`farming.card_titles.traditional_farming`)}</h5>
-                  <p className="card-text">{t(`farming.card_descriptions.traditional_farming_desc`)}</p>
-                  <a href="#!" className="btn btn-primary mt-auto">{t('farming.go_somewhere')}</a>
+                  <h5 className="card-title">{t('farming.card_titles.traditional_farming')}</h5>
+                  <p className="card-text">
+                    {t('farming.card_descriptions.traditional_farming_desc')}
+                  </p>
+                  <a href="#!" className="btn btn-primary mt-auto">
+                    {t('farming.go_somewhere')}
+                  </a>
                 </div>
               </div>
             </div>
           ))}
+
         </div>
       </div>
     </div>

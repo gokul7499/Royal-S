@@ -9,35 +9,28 @@ import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
   const [email, setEmail] = useState('');
   const [visitorCount, setVisitorCount] = useState(0);
-  const backendURL = "https://website-backend-royal.onrender.com/api"; // Backend API URL
 
-  // Record visitor only once per session
+  // ✔️ Your backend URL
+  const backendURL = "https://website-backend-royal.onrender.com/api";
+
+  // -----------------------------------------------------
+  // ✔️ VISITOR COUNT HANDLING (increase only once)
+  // -----------------------------------------------------
   const recordVisitor = async () => {
-    const hasVisited = localStorage.getItem("hasVisited");
+    const visited = localStorage.getItem("visited");
 
-    if (!hasVisited) {
-      try {
-        const response = await axios.get(`${backendURL}/record-visitor`);
-        setVisitorCount(response.data.totalVisitors || 0);
-        localStorage.setItem("hasVisited", "true"); // Mark as visited
-      } catch (error) {
-        console.error("Error recording visitor:", error);
-        // Don't show toast for visitor count errors
-      }
-    } else {
-      // Fetch visitor count without incrementing
-      await fetchVisitorCount();
-    }
-  };
-
-  // Fetch the current visitor count
-  const fetchVisitorCount = async () => {
     try {
-      const response = await axios.get(`${backendURL}/record-visitor`);
+      const response = await axios.get(`${backendURL}/record-visitor`, {
+        params: { increase: visited ? "false" : "true" }
+      });
+
       setVisitorCount(response.data.totalVisitors || 0);
-    } catch (error) {
-      console.error("Error fetching visitor count:", error);
-      // Don't show toast for visitor count errors
+
+      if (!visited) {
+        localStorage.setItem("visited", "true");
+      }
+    } catch (err) {
+      console.log("Visitor count error:", err);
     }
   };
 
@@ -45,49 +38,50 @@ const Footer = () => {
     recordVisitor();
   }, []);
 
+  // -----------------------------------------------------
+  // ✔️ EMAIL VALIDATION
+  // -----------------------------------------------------
   const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.toLowerCase());
   };
 
-  // Handle subscription form submission
+  // -----------------------------------------------------
+  // ✔️ SUBSCRIBE HANDLER
+  // -----------------------------------------------------
   const handleSubscribe = async (e) => {
     e.preventDefault();
 
-    if (!email.trim()) {
-      toast.error('Please enter your email');
-      return;
-    }
-
-    if (!validateEmail(email)) {
-      toast.error('Please enter a valid email address');
-      return;
-    }
+    if (!email) return toast.error("Please enter email");
+    if (!validateEmail(email)) return toast.error("Invalid email");
 
     try {
-      const response = await axios.post(`${backendURL}/subscribe`, { email });
-      if (response.status === 200) {
-        toast.success('Subscribed successfully!');
-        setEmail('');
+      const res = await axios.post(`${backendURL}/subscribe`, { email });
+
+      if (res.status === 200) {
+        toast.success("Subscribed successfully!");
+        setEmail("");
       }
     } catch (error) {
-      console.error('Error subscribing email:', error);
-      toast.error(error.response?.data?.message || 'Failed to subscribe. Try again.');
+      toast.error(error.response?.data?.message || "Subscription failed");
     }
   };
 
   return (
     <footer className="footer">
+
       <div className="footer-container">
+
+        {/* LOGO */}
         <div className="footer-section logo-section">
           <img
-            src={`${process.env.PUBLIC_URL}/img/final_logo-removebg-preview.png`}
-            alt="Royal Shetkari IT Company Logo"
+            src="/img/final_logo-removebg-preview.png"
+            alt="Logo"
             className="footer-logo"
           />
           <p className="text-light">Your trusted partner in technology.</p>
         </div>
 
+        {/* CONTACT */}
         <div className="footer-section">
           <h4>Contact Us</h4>
           <ul>
@@ -97,24 +91,26 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* SOCIAL */}
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-media">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>
 
+        {/* SUBSCRIBE */}
         <div className="footer-section">
           <h4>Subscribe to our Newsletter</h4>
           <form className="subscribe-form" onSubmit={handleSubscribe}>
@@ -123,20 +119,23 @@ const Footer = () => {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
             <button type="submit">Subscribe</button>
           </form>
         </div>
 
+        {/* VISITOR COUNT */}
         <div className="footer-section visitor-count">
           <h4>Visitor Count</h4>
           <p className="text-light">{visitorCount} visitors</p>
         </div>
+
       </div>
 
       <div className="footer-bottom">
-        <p className="text-light">&copy; {new Date().getFullYear()} Royal Shetkari IT Company. All rights reserved.</p>
+        <p className="text-light">
+          © {new Date().getFullYear()} Royal Shetkari IT Company. All rights reserved.
+        </p>
       </div>
 
       <ToastContainer />

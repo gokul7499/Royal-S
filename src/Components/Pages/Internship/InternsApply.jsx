@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const handleGoogleSignIn = () => {
   window.location.href = "https://accounts.google.com/signin";
 };
 
 const InternshipApply = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   return (
     <div className="flex flex-col md:flex-row h-screen bg-gray-100">
       {/* Video Section */}
