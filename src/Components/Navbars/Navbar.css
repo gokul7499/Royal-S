@@ -1,0 +1,76 @@
+/* Navbar.css */
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  color: #333 !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #41fd0d !important;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0dfd15;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+/* Active link style */
+.nav-link.active {
+  color: #0dfd15 !important;
+}
+
+.nav-link.active:after {
+  width: 100%;
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-group {
+    margin-top: 1rem !important;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btn-outline-primary {
+    flex: 1;
+  }
+}
+
+/* Language button active state */
+.btn-outline-primary.active {
+  background-color: #0dfd15;
+  color: white;
+  border-color: #0dfd15;
+}

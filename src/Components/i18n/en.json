@@ -1,0 +1,159 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "internship": "Internship",
+    "farming": "Farming",
+    "services": "Services",
+    "contact": "Contact Us"
+  },
+  
+    "homepage": {
+      "welcome": "Welcome to Royal Shetkari IT Company",
+      "innovating": "Innovating your business with cutting-edge technology solutions.",
+      "empowering": "Empowering Your Digital Transformation",
+      "web_dev": "We provide web development, mobile apps, and digital marketing.",
+      "grow_business": "Grow Your Business with Royal Shetkari",
+      "trusted_partner": "Your trusted partner in IT solutions and services.",
+      "learn_more": "Learn More",
+      "get_started": "Get Started",
+      "contact_us": "Contact Us"
+    },
+    
+    
+      "about": {
+        "discover": "Discover how the world works with ServiceNow",
+        "description": "We bring organizations of every size, in every industry, smarter, faster, and better ways to work.",
+        "watch_video": "Watch Video",
+        "view_fact_sheet": "View Fact Sheet",
+        "welcome": "Welcome to Royal Shetkari IT Company",
+        "about_us_intro": "Welcome to <strong>Royal Shetkari  Company</strong>, where cutting-edge solutions and IT expertise come together to help businesses scale and achieve digital transformation. We are passionate about delivering innovative solutions that address modern challenges in cloud computing, cybersecurity, and software development.",
+        "mission": "<strong>Vision</strong>: Our vision at रॉयल शेतकरी is to revolutionize the agricultural landscape by providing cutting-edge technology and tailored solutions that empower farmers to reach new heights of productivity, profitability, and sustainability. We envision a future where every farmer, regardless of location or scale, has access to the most advanced tools and insights, driving the agriculture sector towards a more connected, innovative, and eco-conscious world 🌱. We are committed to becoming the global leader in agricultural tech, transforming the way farming is done, and ensuring that agriculture becomes a sustainable and future-ready industry 🌾🚜.",
+
+        "our_services": "Our Services",
+        "service_1": "Cloud Computing Solutions",
+        "service_1_desc": "Empowering businesses with scalable, secure cloud infrastructure.",
+        "service_2": "Custom Software Development",
+        "service_2_desc": "Building bespoke software solutions tailored to your needs.",
+        "service_3": "Cybersecurity Consulting",
+        "service_3_desc": "Protecting your business from evolving digital threats.",
+        "service_4": "Data Analytics & AI",
+        "service_4_desc": "Leveraging data and AI to drive smarter business decisions.",
+        "service_5": "IT Infrastructure Management",
+        "service_5_desc": "Ensuring reliable, optimized IT operations for seamless growth.",
+        "our_values": "Our Values",
+        "value_innovation": "Innovation",
+        "value_innovation_desc": "We strive to stay ahead by constantly improving and exploring new ideas.",
+        "value_integrity": "Collaboration",
+        "value_integrity_desc": "Our actions are guided by transparency and honesty in every step we take.",
+        "value_customer_centricity": "Customer-Centricity",
+        "value_customer_centricity_desc": "Our clients’ success is our success, and we tailor solutions to meet their needs.",
+        "value_collaboration": "Collaboration",
+        "value_collaboration_desc": "We believe in teamwork and partnerships to achieve the best outcomes.",
+        "value_excellence": "Excellence",
+        "value_excellence_desc": "We consistently deliver high-quality results through our commitment to excellence."
+      },
+      
+        "farming": {
+          "title": "Empowering Farming",
+          "company": "Royal Shetkari IT Company",
+          "purpose": "Our purpose is to transform the agricultural sector by providing innovative digital solutions that empower farmers to enhance productivity while promoting sustainable practices. We aim to connect farmers with essential resources and support, ensuring they have access to valuable information and organic products. Additionally, we are dedicated to fostering the next generation of professionals by offering technology-related internships that provide students with practical experience and skills relevant to their future careers.",
+          "card_titles": {
+            "arable_farming": "Arable Farming",
+            "traditional_farming": "Traditional Farming",
+            "organic_farming": "Organic Farming"
+          },
+          "card_descriptions": {
+            "arable_farming_desc": "This is a brief description of Arable Farming. It can span multiple lines and provide more details.",
+            "traditional_farming_desc": "This is a brief description of Traditional Farming. It can span multiple lines and provide more details.",
+            "organic_farming_desc": "This is a brief description of Organic Farming. It can span multiple lines and provide more details."
+          },
+          "go_somewhere": "Go somewhere"
+        },
+        
+          "services": {
+            "title": "Services",
+            "our_services": "Our Services",
+            "web_development": {
+              "title": "Web Development",
+              "description": "Creating responsive, high-performing websites for your business needs..."
+            },
+            "mobile_app_development": {
+              "title": "Mobile App Development",
+              "description": "Mobile app development is a dynamic process focused on creating apps..."
+            },
+            "digital_marketing": {
+              "title": "Digital Marketing",
+              "description": "Boosting your brand's presence with targeted digital strategies..."
+            },
+            "it_services": {
+              "title": "IT Services",
+              "description": "Innovative digital solutions to enhance agricultural productivity..."
+            },
+            "organic_products": {
+              "title": "Organic Products",
+              "description": "A range of organic fertilizers and crops available for purchase..."
+            },
+            "soil_health_management": {
+              "title": "Soil Health Management",
+              "description": "Soil health is the foundation of sustainable agriculture..."
+            },
+            "internship_opportunities": {
+              "title": "Internship Opportunities",
+              "description": "Practical technology-focused internships for students..."
+            }
+          },
+         "crops": {
+            "cropAnalyzer": "🌱 Crop Analyzer",
+            "getAnalysis": "Get analysis in English, Marathi and Hindi",
+            "uploadCropImage": "Upload Crop Image",
+            "clickToUpload": "Click to upload or drag and drop",
+            "imageFormats": "PNG, JPG, JPEG (MAX. 5MB)",
+            "imagePreview": "Image Preview",
+            "analyzeCrop": "Analyze Crop",
+            "analyzing": "Analyzing...",
+            "englishResult": "English Result",
+            "marathiResult": "Marathi Result",
+            "hindiResult": "Hindi Result",
+            "uploadPrompt": "Upload a crop image to get analysis and recommendations",
+            "somethingWentWrong": "Something went wrong!",
+            "language": "Language"
+          },
+          
+           
+            
+              "internship": {
+                "give_yourself": "Give Yourself an",
+                "unbeatable_advantage": "Unbeatable Advantage",
+                "platform_description": "The only platform that guarantees real-world work experience across the globe.",
+                "enroll_now": "Enroll Now",
+                "how_it_works": "How It Works",
+                "career_reality": "The Reality of Starting Your Career",
+                "career_description": "Our royal  shetakari company offers internship opportunities for students eager to gain hands-on experience and enhance their skills in a real-world environment. First-year and second-year students are welcome to participate in our internship programs, allowing them to explore and develop their knowledge in various domains. Additionally, for third-year students, we provide a more extensive one-year internship opportunity, enabling them to gain in-depth industry exposure, work on real projects, and refine their expertise. Our internships are designed to equip students with the necessary skills, mentorship, and practical experience to excel in their future careers",
+                "virtual_internships": "The Answer? Virtual Internships",
+                "virtual_internships_description": "Find global work experience in any field or region with Virtual Internships, the No. 1 platform for remote internships.",
+                "launch_your_career": "Launch Your Career",
+                "launch_description": "With Virtual Internships, you’ll gain valuable skills and knowledge from top companies worldwide, all from the comfort of your own home. Your Virtual Internship is like an extended interview, with major growth and learning outcomes and the potential for further opportunities upon completion.",
+                "global_internships": "Global Internships",
+                "internships_available": "Available Now and Growing",
+                "countries": "Countries",
+                "internships_worldwide": "Internships Available Worldwide",
+                "professional_coaching": "One to One",
+                "coaching_calls": "Professional Career Coaching Calls",
+                "interns": "Interns",
+                "further_opportunities": "Offered Further Opportunities Immediately Upon Completion"
+              }
+            
+            
+          
+          
+        
+        
+      
+      
+    
+    
+    }
+  
+  
+  

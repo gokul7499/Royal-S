@@ -1,0 +1,112 @@
+
+
+.contact-container {
+    padding: 10px;
+    margin-top: 0.3cm;
+}
+
+.Contact-Royal {
+    font-size: 15px;
+}
+
+.btn.submitting {
+    background-color: #28a745; /* Change color to indicate loading */
+    cursor: not-allowed; /* Change cursor when button is disabled */
+}
+
+.success-message {
+    color: #28a745; /* Green color for success message */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 10px; /* Add space between columns */
+    justify-content: center; /* Center the columns */
+    margin-bottom: 20px;
+}
+
+.contact-column {
+    flex: 1 1 300px; /* Minimum width for columns */
+    max-width: 500px; /* Max width for columns to avoid stretching */
+    padding: 0;
+    margin: 0 8px;
+}
+
+.contact-info {
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limit the width on large screens */
+    margin-top: 4.2cm;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Reduced padding for better spacing */
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    flex: 0 0 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 30px;
+}
+
+.details {
+    flex: 1;
+    color: black;
+}
+
+.details strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    .contact-info {
+        padding: 15px;
+    }
+
+    .contact-item {
+        padding: 15px; /* Reduced padding for better mobile fit */
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-row {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .contact-item {
+        flex-direction: column; /* Stack icon and details vertically */
+        align-items: flex-start;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    .contact-column {
+        padding: 8px;
+        margin: 0;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+}

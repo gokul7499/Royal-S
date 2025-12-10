@@ -1,0 +1,548 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+  }
+  .platform{
+    color: #000000;
+    font-family: cursive;
+  }
+  
+  .Give{
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  p {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* / Hero Section / */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .hero-content .highlight {
+    color: #007BFF;
+  }
+  
+  .hero-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  .enroll-btn, .how-btn {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .enroll-btn {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .how-btn {
+    background-color: #28A745;
+    color: #fff;
+  }
+  
+ 
+  .image-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+ 
+  .career-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .career-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .career-content p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+
+  
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+      text-align: left;
+      padding: 70px 100px;
+    }
+  
+    .hero-content {
+      flex: 1;
+      padding-right: 40px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.3rem;
+    }
+  
+    .image-container {
+      flex: 1;
+    }
+  
+    .career-content h2 {
+      font-size: 3rem;
+    }
+  
+    .career-content p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .enroll-btn, .how-btn {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .career-content h2 {
+      font-size: 2rem;
+    }
+  
+    .career-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  .career-section {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #0A3D48;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .career-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .career-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .career-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #E0E0E0;
+  }
+  
+
+  .background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .shape {
+    position: absolute;
+    background-color: #FFCC48;
+    border-radius: 50%;
+    opacity: 0.9;
+    animation: circular-motion 30s linear infinite;
+  }
+  
+  .shape-left {
+    width: 350px;
+    height: 350px;
+    background-color: #00B9AE;
+    bottom: -150px;
+    left: -100px;
+  }
+  
+  .shape-right {
+    width: 450px;
+    height: 450px;
+    background-color: #FFCC48;
+    top: -200px;
+    right: -150px;
+  }
+  
+
+  @keyframes circular-motion {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(30px, -30px) rotate(90deg);
+    }
+    50% {
+      transform: translate(60px, 0) rotate(180deg);
+    }
+    75% {
+      transform: translate(30px, 30px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+  
+  .Intership-h2{
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    .career-content h2 {
+      font-size: 2rem;
+    }
+  
+    .career-content p {
+      font-size: 1rem;
+    }
+  
+    .shape-left {
+      width: 250px;
+      height: 250px;
+      bottom: -100px;
+      left: -50px;
+    }
+  
+    .shape-right {
+      width: 300px;
+      height: 300px;
+      top: -150px;
+      right: -80px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .career-content h2 {
+      font-size: 3rem;
+    }
+  
+    .career-content p {
+      font-size: 1.2rem;
+    }
+  
+    .shape-left {
+      width: 400px;
+      height: 400px;
+    }
+  
+    .shape-right {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+
+  
+  .slider-container {
+    text-align: center;
+    padding: 30px 10px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    background-color: black;
+    
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(0px);
+  }
+  
+  .slider-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .slider-container .highlight {
+    color: #00B9AE;
+    font-weight: bold;
+  }
+  
+  
+  .slider-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .slide {
+    min-width: 70%;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .slide p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .prev-btn, .next-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .dots {
+    margin-top: 15px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #00B9AE;
+  }
+  
+  
+
+
+
+
+
+ 
+  @media (max-width: 768px) {
+    .slider-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .slider-container p {
+      font-size: 0.9rem;
+    }
+  
+    .slide {
+      min-width: 85%;
+    }
+  
+    .prev-btn, .next-btn {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider-container h2 {
+      font-size: 1.3rem;
+    }
+  
+    .slider-container p {
+      font-size: 0.8rem;
+    }
+  
+    .slide h3 {
+      font-size: 1.2rem;
+    }
+  
+    .slide {
+      padding: 10px;
+    }
+  
+    .prev-btn, .next-btn {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .launch-career-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+  }
+  
+ 
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #00b9ae;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    font-family: "Poppins";
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  
+ 
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .stat-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .stat-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .purple {
+    color: #6a5acd;
+  }
+  
+  .teal {
+    color: #00b9ae;
+  }
+  
+  .red {
+    color: #f44336;
+  }
+  
+  .yellow {
+    color: #ffcc48;
+  }
+  
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .stat-box {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 0.85rem;
+    }
+  
+    .stat-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .stat-number {
+      font-size: 2rem;
+    }
+  
+    .stat-title {
+      font-size: 1rem;
+      
+    }
+  }

@@ -1,0 +1,140 @@
+.services-container {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+   
+    margin-top: 0.5cm;
+  }
+  .Our-Services{
+    font-weight: bold;
+    
+  }
+  
+  .services-mt {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+ 
+  .services-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: -30px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-card {
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  @media (max-width: 992px) {
+    .service-card {
+      flex: 1 1 calc(50% - 40px);
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+ .service-card:hover {
+  box-shadow: 10px 15px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); 
+  background-color: lawngreen;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: red; 
+}
+
+
+  
+  .service-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  
+
+  .service-card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+  .service-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+
+  @media (max-width: 768px) {
+    .services-mt {
+      font-size: 28px;
+    }
+  
+    .services-section {
+      padding: 20px 10px;
+    }
+  
+    .service-card img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .service-card h3 {
+      font-size: 18px;
+    }
+  
+    .service-card p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-mt {
+      font-size: 24px;
+    }
+  
+    .service-card img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .service-card h3 {
+      font-size: 16px;
+    }
+  
+    .service-card p {
+      font-size: 13px;
+    }
+  }
+  
